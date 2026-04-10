@@ -18,7 +18,11 @@ extension ThemeManager {
         }
         return color
     }
-    
+
+    public class func colorElement(for array: [UIColor]) -> UIColor? {
+        return element(for: array)
+    }
+
     public class func imageElement(for array: [String]) -> UIImage? {
         guard let imageName = element(for: array) else { return nil }
         guard let image = UIImage(named: imageName as String) else {
