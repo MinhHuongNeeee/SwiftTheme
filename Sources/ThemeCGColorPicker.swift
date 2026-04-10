@@ -30,7 +30,7 @@ import UIKit
         self.init(v: { ThemeManager.element(for: colors) })
     }
     
-    public required convenience init(arrayLiteral elements: String...) {
+    public required convenience init(arrayLiteral elements: UIColor...) {
         self.init(v: { ThemeManager.colorElement(for: elements)?.cgColor })
     }
     
